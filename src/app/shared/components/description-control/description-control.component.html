@@ -1,0 +1,10 @@
+<!--<textarea (blur)="onTouched()" (input)="onChange($event.target.value)" class="form-control validation-field">{{ value }}</textarea>-->
+
+<ckeditor
+    [(ngModel)]="value"
+    (input)="onChange($event.target.value)"
+    [config]="config"
+    (change)="onChange($event)"
+    (blur)="onTouched()"
+    debounce="500">
+</ckeditor>

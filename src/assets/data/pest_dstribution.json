@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "country": "Kenya",
+        "county": "Nyeri",
+        "pest_status": "Present",
+        "quarantine_status": "Quarantined"
+    },
+    {
+        "id": 1,
+        "country": "Kenya",
+        "county": "Nakuru",
+        "pest_status": "Present",
+        "quarantine_status": "Unregulated"
+    }
+]

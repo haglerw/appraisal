@@ -1,0 +1,42 @@
+<div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text upload" id="btnUpload">Upload</span>
+        </div>
+        <div class="custom-file">
+            <input type="file"
+                   class="custom-file-input"
+                   accept="image/*, video/*, .doc, .docx, .pdf"
+                   aria-describedby="inputGroupFileAddon01"
+                   (change)="processFile($event)">
+            <label class="custom-file-label">Choose file</label>
+        </div>
+    </div>
+    <div *ngIf="format === 'image' && croppedImage">
+        <div class="row">
+            <div class="col-12">
+                <img [src]="croppedImage" height="150" class="mt-2">
+            </div>
+        </div>
+        <button (click)="openModal(modalContent)" class="btn btn-secondary mt-2">Crop Image</button>
+    </div>
+    <video *ngIf="format==='video' && fileURL" [src]="fileURL" height="150" class="mt-2" controls></video>
+</div>
+
+<ng-template #modalContent>
+    <div class="modal-body bg-gray">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <header class="card-header">
+                        <h5 class="card-title mt-2">Crop Image</h5>
+                    </header>
+
+                    <footer class="card-footer">
+                        <button type="button" class="btn btn-warning pull-right" (click)="closeModal()">Crop</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

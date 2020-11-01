@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+    <div class="col">
+        <div class="card">
+            <header class="card-header">
+                <h5 class="card-title mt-2">{{ title }}</h5>
+            </header>
+            <article class="card-body">
+                <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="row px-3">
+                    <div class="tab-content col-12 border-0">
+                        <div class="form-group">
+                            <label for="name" class="text-gray">Review Period Name</label>
+                            <input formControlName="name" id="name" class="form-control validation-field" type="text">
+                            <small class="text-danger" *ngIf="f.name.touched && f.name.errors?.required">This is a required field</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewid" class="text-gray">Review Period</label>
+                            <select formControlName="reviewid" class="form-control custom-select" id="reviewid">
+                                <option *ngFor="let review of reviews" [value]="review.review_id">{{ review.review_name }}</option>
+                            </select>
+                            <small class="text-danger" *ngIf="f.reviewid.touched && f.reviewid.errors?.required">This is a required field</small>
+                        </div>
+                        <div class="col-12 bg-white text-center py-1">
+                            <button [disabled]="!form.valid" class="btn btn-success mr-1" type="submit">
+                                {{ button }} <img *ngIf="loading" class="pl-2" src="assets/img/app/loading.gif">
+                            </button>
+                            <button type="submit" class="btn btn-danger" (mousedown)="closeModal()">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </div>
+</div>

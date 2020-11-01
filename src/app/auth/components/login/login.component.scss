@@ -1,0 +1,66 @@
+.login-container{
+    position: absolute;
+    background: url("../../../../assets/img/app/background.jpg") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .card {
+        background-color: #ffffff;
+        .card-header {
+            width: 80px;
+            height: 80px;
+            margin: -40px auto 0;
+            border-radius: 50%;
+            font-size: 36px;
+            background-color: #ffffff !important;
+        }
+        .card-body {
+            form {
+                input, form input:focus {
+                    padding: 20px 20px;
+                    border: 1px solid #d82b1e;
+                    box-sizing: border-box;
+                }
+                a, label, input[type=checkbox] {
+                    color: #d82b1e;
+                }
+                .btn-purple {
+                    color: #fff;
+                    background-color: #411b8d;
+                    border-color: #411b8d;
+                }
+
+                .btn-purple:hover {
+                    color: #fff;
+                    background-color: #3a187e;
+                    border-color: #341570;
+                }
+
+                .btn-purple:focus, .btn-purple.focus {
+                    color: #fff;
+                    background-color: #3a187e;
+                    border-color: #3a187e;
+                    box-shadow: 0 0 0 0.2rem rgba(122, 95, 175, 0.5);
+                }
+
+                .btn-purple.disabled, .btn-purple:disabled {
+                    color: #fff;
+                    background-color: #7a5faf;
+                    border-color: #7a5faf;
+                }
+                ::-webkit-input-placeholder { /* Edge */
+                    color: #d82b1e;
+                }
+
+                :-ms-input-placeholder { /* Internet Explorer */
+                    color: #d82b1e;
+                }
+
+                ::placeholder {
+                    color: #d82b1e;
+                }
+            }
+        }
+    }
+}

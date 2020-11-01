@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "pest_no": "PST/001",
+        "scientific_name": "Agrotis ipsilon, Hufnagel,1766",
+        "common_name": "Black cutworm",
+        "life_form": "Insect"
+    },
+    {
+        "id": 2,
+        "pest_no": "PST/002",
+        "scientific_name": "Banana bract mosaic virus",
+        "common_name": "Banana bract mosaic disease",
+        "life_form": "Virus"
+    },
+    {
+        "id": 3,
+        "pest_no": "PST/004",
+        "scientific_name": "Araecerus fasciculatus",
+        "common_name": "Cocoa weevil",
+        "life_form": "Insect"
+    },
+    {
+        "id": 4,
+        "pest_no": "PST/005",
+        "scientific_name": "Bidens pilosa",
+        "common_name": "Black Jack",
+        "life_form": "Weed"
+    }
+]

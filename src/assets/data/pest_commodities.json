@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "commodity": "Tomatoes",
+        "parts_affected": "Whole Fruit",
+        "control_measures": "Some control measures here",
+        "references": "http://www.ihatetomatoes.com"
+    },
+    {
+        "id": 2,
+        "commodity": "Maize",
+        "parts_affected": "Stalk, Roots",
+        "control_measures": "Some control measures here",
+        "references": "http://www.maizepests.com"
+    }
+]

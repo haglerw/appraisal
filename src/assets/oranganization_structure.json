@@ -1,0 +1,42 @@
+[
+  {
+    "designation_name": "Senior Pastor",
+    "designation_id": 1,
+    "designation_parentid": 0
+  },
+  {
+    "designation_name": "Assistant Pastor",
+    "designation_id": 2,
+    "designation_parentid": 1
+  },
+  {
+    "designation_name": "Associate Pastor",
+    "designation_id": 3,
+    "designation_parentid": 2
+  },
+  {
+    "designation_name": "Secretary",
+    "designation_id": 4,
+    "designation_parentid": 3
+  },
+  {
+    "designation_name": "Treasurer",
+    "designation_id": 5,
+    "designation_parentid": 4
+  },
+  {
+    "designation_name": "Maintenance officer",
+    "designation_id": 6,
+    "designation_parentid": 5
+  },
+  {
+    "designation_name": "Usher",
+    "designation_id": 7,
+    "designation_parentid": 6
+  },
+  {
+    "designation_name": "Normal",
+    "designation_id": 8,
+    "designation_parentid": 7
+  }
+]
